@@ -6,11 +6,7 @@ import java.awt.*;
 
 public class FlyTrap extends Critter {
     public Action getMove(CritterInfo info) {
-        if (info.getFront() == Neighbor.OTHER) {
-            return Action.INFECT;
-        } else {
-            return Action.LEFT;
-        }
+        return info.getFront() == Neighbor.OTHER?Action.INFECT:Action.LEFT;
     }
 
     public Color getColor() {
