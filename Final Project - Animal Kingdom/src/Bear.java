@@ -1,8 +1,8 @@
 import java.awt.*;
 
 public class Bear extends Critter {
-    private boolean polar =false;
-    private boolean slash=false;
+    private boolean polar;
+    private boolean slash;
     private int move_count=0;
 
     public Bear(boolean polar) {
